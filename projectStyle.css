@@ -1,0 +1,43 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+:root{
+    --primary:#1B4F72;
+    --accent:#F18F01;
+    --text:#2C3E50;
+    --light:#F4F6F8;
+    --white:#F4F6F8;
+    --font-main:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    font-family: var(--font-main);
+    color: var(--text);
+    line-height: 1.6;
+    background: #FFFFFF;
+}
+nav{display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 5%;
+background-color: #1B4F72;
+position: sticky;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white);
+}
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+.nav-link a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+}
+.nav-link
