@@ -11,10 +11,13 @@ font-weight: lighter;
 text-align: justify;
 line-height: 30px;
 color: crimson;}
+
 div{width: 300px;
-    border: 15px goldenrod;
-    padding: 30px;
-    margin: 60px; }
+padding: 10px;
+background-color: yellow;
+flex-wrap: wrap;
+display: flex;}
+button
 
 a:visited{color:burlywood;}
 a:active{color: green;

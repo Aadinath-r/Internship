@@ -1,103 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aadinath Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Aadinath| Web Developer Portfolio</title>
+<meta
+name="description"
+content="Full-stack web developer specializing
+in React and Node.js. Available for freelance projects."
+/>
+<meta
+name="keywords"
+content="web developer, React, JavaScript, portfolio"
+/>
+<meta name="author" content="Aadinath" />
+
+<meta property="og:title" content="Aadinath| Web Developer" />
+<meta
+property="og:description"
+content="Check out my portfolio and projects!"
+/>
+<meta property="og:image" content="https://chiranth.com/preview.jpg" />
+<meta property="og:url" content="https://chiranth.com" />
+<meta property="og:type" content="website" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aadinath| Web Developer" />
+<meta name="twitter:description" content="Check out my portfolio!" />
+<link rel="icon" href="Aadinath.jpg" />
 <link rel="stylesheet" href="projectStyle.css">
 </head>
 <body>
-<nav>
-    <div class="navbar">PS</div>
-    <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
-<button class="theme-toggle" aria-label="Toggle dark mode" title="toggle dark mode">DarkM</button>
-<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">=</button>
-</nav>
-
 <header>
-    <section id="hero" class="hero-section">
-<h1>Welcome to My Portfolio</h1>
-<h3 style="color: brown;">Hi, I'm Aadinath R. I am learning Full Stack Development.</h3>
-<p>I'm from Bengaluru.</p>
-<a href="#contact">Hire Me</a>
-</section>
-</header>
-<section id="about">
-<h2>About Me</h2>
-<img src="Aadinath.jpg" alt="Profile Picture" width="150" height="150">
-<p>I am learning Full Stack Development and would love to work on any projects to improve my experience and skills.</p>
-</section>
-<section id="skills">
-<h2>Skills</h2>
-<ul>
-<li>HTML</li>
-<li>Basic CSS</li>
-<li>Learning JavaScript</li>
-<li>Basic C Programming</li>
+<nav class="navbar">
+<div class="logo">ARG</div>
+<ul class="nav-link">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
-<h2>Learning Journey</h2>
-<ol>
-<li>Started learning C Programming.</li>
-<li>Started learning HTML.</li>
-<li>Created my first portfolio webpage.</li>
-<li>Learning CSS and JavaScript.</li>
-</ol>
+<button
+class="theme-toggle"
+aria-label="toggle dark mode "
+title="dark mode "
+>
+🌛
+</button>
+<button
+class="menu-toggle"
+aria-label="toggle navigation"
+aria-expanded="false"
+>
+≡
+</button>
+</nav>
+</header>
+<main>
+<section id="hero" class="hero-section">
+<h1>Welcome to My Portfolio</h1>
+<h3>I am Aadinath R , a passionate web developer and designer.</h3>
+<p>I'm from Bengaluru</p>
+<div class="hero-button">
+<a href="#project"> View My Work </a><br>
+<a href="https://www.linkedin.com/in/aadinath-r-321537422/"> Contact Me </a>
+</div>
 </section>
-<section id="projects">
+<section id="about" class="about-section">
+<h2>About Me</h2>
+<figure class="profile-figure">
+<img
+src="Aadinath.jpg"
+alt="profile photo"
+width="200px"
+height="200px"
+/>
+<figcaption>Aadinath web developer</figcaption>
+</figure>
+<p>
+I am a web developer with a strong background in front-end and
+back-end development. I enjoy creating beautiful and functional
+websites that provide an excellent user experience.
+</p>
+</section>
+<a href="#hire">hire me </a>
+
+<section id="skills" class="skill-section">
+<h2>Skills</h2>
+<div class="skill-grid">
+<div class="skill-grid" data-level="90">HTML</div>
+<div class="skill-grid" data-level="80">CSS</div>
+<div class="skill-grid" data-level="75">JavaScript</div>
+<div class="skill-grid" data-level="60">React</div>
+</div>
+</section>
+<section id="projects" class="profile-section">
 <h2>Projects</h2>
-
-<h3>Project 1: Portfolio Website</h3>
-<p>A simple portfolio website created using HTML.</p>
-<a href="#">View Project</a>
-
-<h3>Project 2: Student Management System</h3>
-<p>A simple webpage to store student details.</p>
-<a href="#">View Project</a>
-
-<h3>Project 3: Calculator</h3>
-<p>A basic calculator using HTML, CSS and JavaScript.</p>
-<a href="#">View Project</a>
-</section>
-<section id="contact">
-<h2>Contact Me</h2>
-<p>Email: <a href="mailto:25etai410002@msruas.ac.in">25etai410002@msruas.ac.in</a></p>
-<p>GitHub:<a href="https://github.com/Aadinath-r">Aadinath</a></p>
-<p>LinkedIn:<a href="https://www.linkedin.com/in/aadinath-r-321537422/">My LinkedIn</a></p>
+<div class="project-grid">
+<article class="project-card" data-category="web">
+<img
+src="weather.jpg"
+alt="weather app screenshot"
+width="300px"
+height="150px"
+/>
+<h3>Weather App</h3>
+<p>Real-Time weather dashboard using OpenWeather API</p>
+<div class="project_tag">
+<span>React</span>
+<span>API</span>
+</div>
+<a href="#">Live Demo</a>
+<a href="#">GitHub</a>
+</article>
+</div>
 </section>
 <section id="contact" class="contact-section">
-    <h2>Get in Touch</h2>
-    <form action="#" method="post" novalidate>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+<h2>Get In Touch</h2>
+<form action="#" method="post" novalidate>
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required />
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" name="email" id="email" />
+</div>
+<div class="form-group">
+<label for="message"> Message</label>
+<textarea name="message" id="message" rows="5" required></textarea>
+</div>
 
-        </div><br>
-         <div class="form-group">
-            <label for="Email">email</label>
-            <input type="email" id="email" name="name" required>
-
-        </div><br>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="5"></textarea>
-        </div>
-    </form>
+<button type="submit" class="btn btn-primary">send message 📩</button>
+</form>
 </section>
+</main>
 <footer class="site-footer">
-    <p>
-        &copy; aadinath. Built with HTML and CSS
-    </p>
-    <nav aria-label="socialmedia links">
-    <a href="" target="_blank">Github</a>
-    <a href="" target="_blank">LinkedIN</a>
+<p>&copy; Aadinath.R built with HTML & CSS </p>
+<nav aria-label="socialmedia links">
+<a href="https://github.com/Aadinath-r" target="_blank">GitHub</a>
+<a
+href="https://www.linkedin.com/in/aadinath-r-321537422/"
+target="_blank"
+>LinkedIn</a
+>
 </nav>
 </footer>
-
-
 </body>
 </html>
