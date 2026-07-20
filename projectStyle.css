@@ -87,6 +87,7 @@ overflow: hidden;}
     height: 200px;
     object-fit: cover;
 }
-.project-card{
-    text-decoration:color(var) chocolate
+.project-card a{
+    text-decoration: none;
+    color:var(--accent);
 }
