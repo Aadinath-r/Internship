@@ -63,11 +63,11 @@ text-align: center;
 font-size: 30px;
 margin-bottom: 20px;
 }
-.skill-grid{
-display: grid;
-grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+.skill-container{
+display: flex;
+justify-content: space-evenly;
 gap:20px;
-margin-top:40px;
+flex-wrap: wrap;
 }
 .skill-grid{
 background-color: var(--light);
@@ -77,11 +77,23 @@ padding: 30px 20px;
 font-weight: bold;
 text-align: center;
 font-size: 1.1rem;
+transition: transform 0.3,box-shadow 0.3s;
+}
+.skill-grid:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.859);
 }
 .project-card{background-color: var(--text);
 border-radius: 16px;
 color: #FFFFFF;
-overflow: hidden;}
+overflow: hidden;
+transition: transform 0.3,box-shadow 0.3s;
+}
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.859);
+}
+
 .project-card img{
     width: 100%;
     height: 200px;
@@ -90,4 +102,73 @@ overflow: hidden;}
 .project-card a{
     text-decoration: none;
     color:var(--accent);
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn-primary{
+    background-color: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+}
+section{
+    padding: 80px 5px;
+}
+section h2{
+    font-size:2.2rem ;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+section h2::after{
+    content: "";
+    display: block;
+    width:60px;
+    height: 4px;
+    background-color: var(--accent);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+.hero-button{
+    animation:fadeinup 0.8s ease 0.2s both;
+}
+ 
+.hero-section h1{
+    animation:fadeinup 0.8s ease 0.2s both;
+}
+ 
+.contact-section{
+    max-width:600px;
+    margin:0 auto;
+}
+ 
+.form-group{
+    margin-bottom:24px;
+}
+.form-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+    color:var(--primary);
+}
+ 
+.form-group input,.form-group textarea{
+    width:100%;
+    padding:14px 16px;
+    border:2px solid #DDD;
+    border-radius:8px;
+    font-size:1rem;
+    font-family: inherit;
+    transition:border-color 0.3s;
+}
+.form-group input:focus,.form-group textarea:focus{
+    outline:none;
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(27,79,114,0.15);
 }
